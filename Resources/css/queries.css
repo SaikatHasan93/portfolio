@@ -1,0 +1,253 @@
+@media screen and (max-width: 1200px){
+    .row{
+        width: 100%;
+        padding: 0 40px;
+    }
+    
+    .close-btn ion-icon{
+        right: 50px;
+    }
+    
+    .hero-text-box{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .close-btn ion-icon{
+        right: 40px;
+    }
+    
+    #hero{
+        height: 80vh;
+    }
+    
+    .hero-text-box{
+        top: 42%;
+    }
+    
+    .intro{
+        font-size: 160%;
+        margin-top: 20px;
+    }
+    
+    .description{
+        font-size: 140%;
+    }
+    
+    .btn:link, .btn:visited, .btn{
+        width: 150px;
+        padding: 10px 0;
+    }
+    
+    .grid-about-container{
+        grid-gap: 50px;
+    }
+    
+    .job p, .education p {
+        font-size: 120%;
+    }
+    
+    .job span, .education span {
+        font-size: 120%;
+    }
+    
+    .job h4, .education h4 {
+        font-size: 150%;
+    }
+    
+    #experience h3{
+        font-size: 220%;
+        margin-bottom: 30px;
+    }
+    
+    #contact h3{
+        font-size: 220%;
+        margin-bottom: 10px;
+    }
+    
+    .grid-process-items {
+        padding: 60px 0;
+    }
+    
+    .grid-process-items ion-icon {
+        font-size: 400%;
+        margin-bottom: 15px;
+    }
+    
+    .grid-portfolio-container{
+        grid-auto-rows: minmax(220px, auto);
+    }
+    
+    .grid-contact-items:nth-child(1) {
+        padding: 30px 40px;
+    }
+    
+    .nested-grid-contact-items {
+        padding: 30px 40px;
+    }
+    footer {
+        padding: 40px 0;
+    }
+    
+    .grid-testimonial-container{
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    #testimonial {
+      background-attachment: scroll;
+    }
+    
+    .scroll-down{
+        bottom: 220px;
+    }
+}
+
+
+@media screen and (max-width: 768px){
+    .grid-about-container{
+        grid-template-columns: 1fr;
+        grid-gap: 0;
+        text-align: center;
+    }
+    
+    .paul{
+        width: 50%;
+        height: 90%;
+    }
+    
+    .grid-about-items{
+        text-align: center;
+    }
+    
+    #about .btn:link, .btn:visited, .btn {
+        margin-bottom: 25px;
+    }
+    
+    .grid-process-container,
+    .grid-portfolio-container,
+    .grid-testimonial-container{
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .grid-portfolio-items:nth-child(5){
+        grid-column: 1/3;
+        width: 100%;
+    }
+    
+    .grid-portfolio-container {
+        grid-auto-rows: minmax(230px, auto);
+    }
+    
+    #testimonial, #experience {
+      background-attachment: scroll;
+    }
+    
+    .grid-contact-container{
+        grid-template-columns: 1fr;
+    }
+    
+    .nested-grid-contact-container{
+        grid-template-columns: 1fr;
+    }
+    
+    .nested-grid-contact-items{
+        border: none;
+    }
+    
+    h1{
+        font-size: 550%;
+    }
+    
+    #testimonial p{
+        font-size: 140%;
+    }
+    
+    .scroll-down p{
+        font-size: 140%;
+    }
+}
+
+@media screen and (max-width: 480px){
+    html, body{
+        font-size: 9px;
+    }
+    h1{
+        font-size: 500%;
+    }
+    
+    .hero-text-box span {
+        font-size: 170%;
+    }
+    .paul{
+        width: 100%;
+    }
+    
+    .grid-process-container,
+    .grid-portfolio-container{
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .grid-experience-container,
+    .grid-education-items{
+        grid-template-columns: 1fr;
+    }
+    
+    #testimonial p {
+        font-size: 110%;
+    }
+    
+    #testimonial h4 {
+        font-size: 120%;
+    }
+    
+    #testimonial span {
+        font-size: 110%;
+    }
+    
+    .signature{
+        margin-left: 0;
+    }
+    
+    .quote {
+        font-size: 400%;
+    }
+    
+    section{
+        padding: 60px 0;
+    }
+    
+    footer {
+      padding: 30px 0;
+    }
+    
+    h2 {
+      font-size: 320%;
+    }
+    
+    .section-title p{
+        font-size: 140%;
+    }
+    
+    #contact h3{
+        font-size: 180%;
+    }
+    
+    .grid-about-container {
+        grid-gap: 0;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .grid-process-container,
+    .grid-portfolio-container,
+    .grid-experience-container,
+    .grid-education-items{
+        grid-template-columns: 1fr;
+    }
+    
+    .grid-portfolio-items:nth-child(5){
+        grid-column: 1/2;
+        width: 100%;
+    }
+}

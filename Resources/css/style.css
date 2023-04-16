@@ -1,0 +1,610 @@
+/*        
+Template Name: Paul Lapkin - Portfolio Template
+Template URI:   
+Description:    An Awesome Portfolio Templete
+Author:         Saikat
+Author URI:              
+Version:        1.0
+Font Family:    font-family: 'Raleway', sans-serif;
+                font-family: 'Roboto', sans-serif;
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;700&family=Roboto:wght@300;400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html,
+body{
+    background-color: #fff;
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 1.5;
+    text-rendering: optimizeLegibility;
+    scroll-behavior: smooth;
+}
+
+
+/*Reusable Components*/
+[class*="uk-animation-"]{
+    animation-duration: 1s;
+}
+
+a,
+a:hover{
+    text-decoration: none;
+}
+
+p{
+    margin-top: 0;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4{
+    font-family: 'Raleway', sans-serif;
+    margin-top: 0;
+    font-weight: 700;
+}
+h1{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 600%;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+h3{
+    font-size: 260%;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 45px;
+}
+
+.row{
+    max-width: 1180px;
+    margin: auto;
+}
+
+section{
+    padding: 120px 0;
+}
+
+.btn:link,
+.btn:visited,
+.btn{
+    width: 200px;
+    background: #ff2b4a;
+    color: #fff;
+    display: inline-block;
+    text-align: center;
+    font-size: 160%;
+    padding: 10px 0;
+    border: 2px solid #ff2b4a;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.btn:hover,
+.btn:active{
+    background: transparent;
+    color: #ff2b4a;
+}
+
+h2{
+    font-size: 400%;
+    color: #000;
+}
+
+ul li{
+    list-style: none;
+}
+
+
+/*Hero Setion*/
+#hero{
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../css/img/mainl2.jpg) no-repeat center / cover;
+    height: 100vh;
+}
+
+.logo{
+    float: left;
+    height: 50px;
+    margin-top: 45px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.logo:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.nav-icon{
+    color: #fff;
+    float: right;
+    margin-top: 45px;
+}
+
+.nav-icon ion-icon:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.nav-icon ion-icon{
+    font-size: 400%;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.uk-link-toggle:hover .uk-link, .uk-link:hover, a:hover {
+  color: #000;
+}
+
+nav.uk-sticky-fixed{
+    background: rgba(0,0,0,0.8);
+}
+
+nav.uk-sticky-fixed .logo{
+    margin: 7px 0;
+}
+
+nav.uk-sticky-fixed .nav-icon{
+    margin: 10px 0;
+}
+
+.hero-text-box{
+    width: 1180px;
+    margin: auto;
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.hero-text-box span{
+    font-size: 200%;
+    color: #fff;
+    margin-top: 10px;
+    display: block;
+}
+
+h1::before{
+    content: '';
+    height: 2px;
+    width: 100%;
+    display: block;
+    background: #fff;
+}
+h1::after{
+    content: '';
+    height: 2px;
+    width: 100%;
+    display: block;
+    background: #fff;
+}
+
+h4{
+    font-size: 160%;
+}
+
+.scroll-down{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 40px;
+    margin: auto;
+    width: 40px;
+}
+
+.scroll-down p{
+    width: 140px;
+    font-size: 150%;
+    color: #fff;
+    margin-bottom: 0;
+    margin-left: -50px;
+}
+
+.scroll-down a ion-icon{
+    font-size: 400%;
+    color: #fff;
+    position: relative;
+    animation: 2s arrow infinite ease;
+}
+
+@keyframes arrow{
+    0% {
+        top: 10px;
+    }
+    
+    50% {
+        top: 30px;
+    }
+    100% {
+        top: 10px;
+    }
+}
+                    /*Start Hamburger Menu*/
+.menu-container{
+    width: 100%;
+    height: 0%;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 9999;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.close-btn ion-icon{
+    position: absolute;
+    top: 45px;
+    right: 85px;
+    color: #fff;
+    font-size: 400%;
+    border: 1px solid #fff;
+}
+
+.close-btn:hover ion-icon{
+    cursor: pointer;
+}
+
+.menu-item{
+    text-align: center;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.menu-item ul li{
+    margin: 15px 0;
+}
+
+.menu-item ul li a{
+    color: #fff;
+    font-size: 300%;
+    text-transform: capitalize;
+    transition: .2s;
+    display: block;
+}
+
+.menu-item ul li:hover a{
+    color: #ff2b4a;
+    font-size: 320%;
+}
+                    /*End Hamburger Menu*/
+
+/*About Section*/
+.grid-about-container{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 60px;
+}
+
+.paul{
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+}
+
+.intro{
+    font-size: 180%;
+    color: #222222;
+    font-weight: 700;
+    margin-top: 50px;
+}
+
+.description{
+    font-size: 160%;
+    color: #222222;
+    margin: 30px 0;
+}
+
+.bdr{
+    border-top: 1px solid rgba(34, 34, 34, 0.3);
+    border-bottom: 1px solid rgba(34, 34, 34, 0.3);
+}
+
+
+/*Process Section*/
+#process{
+    background: #f6f6f6;
+}
+
+.section-title{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-title p{
+    font-size: 160%;
+    color: #6f6f6f;
+    margin-top: 20px;
+}
+
+.grid-process-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    color: #fff;
+    text-align: center;
+}
+
+.grid-process-items{
+    padding: 70px 0;
+}
+
+.grid-process-items:nth-child(1){
+    background: #10c6fc;
+}
+
+.grid-process-items:nth-child(2){
+    background: #835aeb;
+}
+
+.grid-process-items:nth-child(3){
+    background: #002453;
+}
+
+.grid-process-items:nth-child(4){
+    background: #ff2b4a;
+}
+
+.grid-process-items ion-icon{
+    font-size: 420%;
+    margin-bottom: 20px;
+}
+
+.grid-process-items h4{
+    text-transform: uppercase;
+    color: #fff;
+}
+
+
+/*Experience Section*/
+#experience{
+    background: url(../img/work.jpg) no-repeat center / cover;
+    background-attachment: fixed;
+    color: #fff;
+}
+
+.grid-experience-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.grid-experience-items,
+.grid-education-items{
+    background: rgba(0, 0, 0, 0.7);
+    padding: 45px 30px;
+}
+
+.job h4,
+.education h4{
+    font-size: 180%;
+    color: #fff;
+}
+
+.job span,
+.education span{
+    font-size: 150%;
+    margin: 10px 0;
+    display: inline-block;
+}
+
+.job p,
+.education p{
+    font-size: 150%;
+}
+
+#experience hr{
+    margin: 30px 0;
+    border:1px solid rgba(255, 255, 255, 0.5);
+}
+
+
+/*Portfolio Section*/
+.grid-portfolio-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(250px, auto);
+}
+
+.grid-portfolio-items img{
+    height: 100%;
+    width: 100%;
+}
+
+.grid-portfolio-items:nth-child(5){
+    grid-column: 1/3;
+}
+
+.uk-lightbox-toolbar{
+    font-size: 160%;
+}
+
+.uk-lightbox{
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.portfolio-filter{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.portfolio-filter button{
+    border: none;
+    margin: 0 2px;
+    margin-bottom: 5px;
+    padding: 5px 15px;
+    font-size: 140%;
+}
+
+.portfolio-filter button:hover{
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+}
+
+.mixitup-control-active{
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+}
+
+.grid-portfolio-items:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+/*Testimonial Section*/
+#testimonial{
+    background: url(img/testimonial.jpg) no-repeat center top / cover;
+    background-attachment: fixed;
+}
+
+.grid-testimonial-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.quote{
+    font-size: 500%;
+}
+
+.signature img{
+    width: 40%;
+}
+
+.signature{
+    margin-left: -5px;
+    margin-bottom: 15px;
+}
+
+#testimonial p{
+    margin-bottom: 25px;
+    font-size: 160%;
+}
+
+#testimonial span{
+    font-size: 140%;
+}
+
+
+/*Contact Section*/
+#contact{
+    background: #fff;
+}
+
+#contact h3{
+    color: #000;
+    margin-bottom: 15px;
+}
+
+.grid-contact-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.grid-contact-items:nth-child(1){
+    background: #f6f6f6;
+    padding: 45px 30px;
+}
+
+.nested-grid-contact-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 10px;
+}
+
+.nested-grid-contact-items{
+    background: #f6f6f6;
+    padding: 45px 30px;
+}
+
+.nested-grid-contact-items p{
+    font-size: 140%;
+}
+
+.single-form input[type="text"],
+.single-form input[type="email"],
+.single-form textarea{
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    background: transparent;
+    color: #000;
+    font-size: 140%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.single-form-btn{
+    text-align: right;
+    margin-top: 25px;
+}
+
+
+/*Footer Section*/
+footer{
+    background: rgba(0, 0, 0, 0.8);
+    padding: 50px 0;
+    text-align: center;
+}
+
+.social-icons{
+    margin-bottom: 10px;
+}
+
+.social-icons ul li a ion-icon{
+    color: #fff;
+    font-size: 200%;
+    border-right: 1px solid #fff ;
+    padding: 0 10px;
+}
+
+.social-icons ul li:hover a ion-icon{
+    color: #ff2b4a;
+}
+
+.social-icons ul li{
+    display: inline-block;
+}
+
+.copyright{
+    color: #fff;
+    margin-left: 10px;
+    font-size: 120%;
+}
+
+
+/*Totop Section*/
+.totop{
+    margin-top: 20px;
+}
+
+.totop .uk-totop{
+    padding: 10px 6px;
+    color: #f5f5f5;
+    transition: .2s;
+    border: 1px solid #f5f5f5;
+}
+
+.totop .uk-totop:hover{
+    background: #fff;
+    color: #000;
+}

@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PSD to HTML Convertion</title>
+    <!--Favicon-->
+    <link rel="shortcut icon" type="image/x-icon" href="Resources/img/coding.png">
+    <!--CSS Files-->
+    <link rel="stylesheet" href="Vendors/css/uikit.min.css">
+    <link rel="stylesheet" href="Vendors/css/normalize.css">
+    <link rel="stylesheet" href="Resources/css/style.css">
+    <link rel="stylesheet" href="Resources/css/queries.css">
+</head>
+
+<body>
+    <!--Start Header Section-->
+    <header id="hero" class="scrollify">
+        <nav uk-sticky="start: 200; animation: uk-animation-slide-top">
+            <div class="row">
+                <a href="#hero">
+                    <img src="Resources/img/LastFinal.png" alt="Adorable" class="logo">
+                </a>
+                <a class="nav-icon" onclick="openMenu()"><ion-icon name="menu-outline"></ion-icon></a>
+            </div>
+            <div class="menu-container" id="navbar" onclick="closeMenu()">
+                <div class="close-btn" onclick="closeMenu()">
+                    <ion-icon name="close-outline"></ion-icon>
+                </div>
+                <div class="menu-item">
+                    <ul>
+                        <li><a onclick="closeMenu()" href="#hero">Home</a></li>
+                        <li><a onclick="closeMenu()" href="#about">About</a></li>
+                        <li><a onclick="closeMenu()" href="#process">Process</a></li>
+                        <li><a onclick="closeMenu()" href="#experience">Experience</a></li>
+                        <li><a onclick="closeMenu()" href="#portfolio">Portfolio</a></li>
+                        <li><a onclick="closeMenu()" href="#testimonial">Testimonial</a></li>
+                        <li><a onclick="closeMenu()" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="hero-text-box">
+            <h1 uk-scrollspy="cls: uk-animation-slide-left; repeat: true">Paul Lapkin</h1>
+            <span uk-scrollspy="cls: uk-animation-slide-right; repeat: true">#User Experience #Music #Creative Direction</span>
+        </div>
+        <div class="scroll-down">
+            <p uk-scrollspy="cls: uk-animation-slide-left; repeat: true">Scroll down for more</p>
+            <a href="#about">
+                <ion-icon name="download-outline"></ion-icon>
+            </a>
+        </div>
+    </header>
+    <!--End Header Section-->
+    
+    <!--Start About Section-->
+    <section id="about" class="scrollify">
+        <div class="row">
+            <div class="grid-about-container">
+                <div uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
+                    <img src="Resources/img/P2.jpg" alt="paul" class="paul">
+                </div>
+                <div uk-scrollspy="cls: uk-animation-slide-right; repeat: true">
+                    <p class="intro">Hi, I'm Paul Lapkin, Experience crafter from Canada.</p>
+                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum illo exercitationem quod repellat voluptatem quibusdam molestiae repudiandae doloremque maxime dolor ad nihil explicabo numquam, debitis voluptate deleniti, nemo labore. Inventore, dolore vel eveniet, totam fuga facere quibusdam non reprehenderit dolorum.<br><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium voluptate possimus porro consequuntur excepturi quia perferendis voluptas aperiam optio, amet tempora quos, reprehenderit blanditiis tenetur quisquam! Laboriosam ipsum esse non odio enim, saepe earum minus inventore atque accusantium.</p>
+                    <div class="about-cta-btn">
+                        <a href="#" class="btn btn-full">Hire Me!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End About Section-->
+    
+    <!--Start Process Section-->
+    <section id="process" class="scrollify">
+        <div class="row">
+            <div class="section-title">
+                <h2>My Working Process</h2>
+                <P>Hi, I'm Paul Lapkin, Experience crafter from Canada.</P>
+            </div>
+            <div class="grid-process-container" uk-scrollspy="cls: uk-animation-fade; target: .uk-card; delay: 200; repeat: true">
+                <div class="grid-process-items uk-card">
+                    <ion-icon name="desktop-outline"></ion-icon>
+                    <h4>Design</h4>
+                </div>
+                <div class="grid-process-items uk-card">
+                    <ion-icon name="code-outline"></ion-icon>
+                    <h4>Development</h4>
+                </div>
+                <div class="grid-process-items uk-card">
+                    <ion-icon name="flash-outline"></ion-icon>
+                    <h4>Testing</h4>
+                </div>
+                <div class="grid-process-items uk-card">
+                    <ion-icon name="airplane-outline"></ion-icon>
+                    <h4>Launch</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Process Section-->
+    
+    <!--Start Experience Section-->
+    <section id="experience" class="scrollify">
+        <div class="row">
+            <div class="grid-experience-container" uk-scrollspy="cls: uk-animation-scale-up; target: .uk-card; delay: 150; repeat: true">
+                <div class="grid-experience-items uk-card">
+                    <h3>Work Experience</h3>
+                    <div class="job">
+                        <h4>Mad Max Design</h4>
+                        <span>OCT 2013 - june 2014</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, consequuntur aliquam laborum id. Laborum, debitis doloremque veritatis saepe, molestias iste.</p>
+                    </div>
+                    <hr>
+                    <div class="job">
+                        <h4>Crazy Design</h4>
+                        <span>OCT 2015 - june 2015</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, consequuntur aliquam laborum id. Laborum, debitis doloremque veritatis saepe, molestias iste.</p>
+                    </div>
+                </div>
+                <div class="grid-education-items uk-card" uk-scrollspy-class="uk-animation-scale-up">
+                    <h3>Education</h3>
+                    <div class="education">
+                        <h4>Maddison University</h4>
+                        <span>OCT 2013 - june 2014</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, consequuntur aliquam laborum id. Laborum, debitis doloremque veritatis saepe, molestias iste.</p>
+                    </div>
+                    <hr>
+                    <div class="education">
+                        <h4>Max Design & Art Institute</h4>
+                        <span>OCT 2014 - Present</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, consequuntur aliquam laborum id. Laborum, debitis doloremque veritatis saepe, molestias iste.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Experience Section-->
+    
+    <!--Start Portfolio Section-->
+    <section id="portfolio" class="scrollify">
+        <div class="row">
+            <div class="section-title">
+                <h2>My Latest Work</h2>
+                <p>Hi, I'm Paul Lapkin, Experience crafter from Canada.</p>
+            </div>
+            <div class="portfolio-filter">
+                <button type="button" data-filter="all">All</button>
+                <button type="button" data-filter=".web-design">Web Design</button>
+                <button type="button" data-filter=".web-dev">Web Development</button>
+                <button type="button" data-filter=".wp">WordPress</button>
+            </div>
+            <div class="grid-portfolio-container" uk-lightbox="animation: scale">
+                <div class="grid-portfolio-items mix web-design">
+                    <a href="Resources/css/img/g11.jpg" data-caption="Web Design">
+                        <img src="Resources/css/img/g1.jpg" alt="Portfolio">
+                    </a>
+                </div>
+                <div class="grid-portfolio-items mix web-dev">
+                    <a href="Resources/css/img/g22.jpg" data-caption="Web Development">
+                        <img src="Resources/css/img/g2.jpg" alt="Portfolio">
+                    </a>
+                </div>
+                <div class="grid-portfolio-items mix wp">
+                    <a href="Resources/css/img/g33.jpg" data-caption="Web Development">
+                        <img src="Resources/css/img/g3.jpg" alt="Portfolio">
+                    </a>
+                </div>
+                <div class="grid-portfolio-items mix web-design">
+                    <a href="Resources/css/img/g44.jpg" data-caption="Web Development">
+                        <img src="Resources/css/img/g4.jpg" alt="Portfolio">
+                    </a>
+                </div>
+                <div class="grid-portfolio-items mix wp">
+                    <a href="Resources/css/img/g55.jpg" data-caption="Web Development">
+                        <img src="Resources/css/img/g5.jpg" alt="Portfolio">
+                    </a>
+                </div>
+                <div class="grid-portfolio-items mix web-design">
+                    <a href="Resources/css/img/g66.jpg" data-caption="Web Development">
+                        <img src="Resources/css/img/g6.jpg" alt="Portfolio">
+                    </a>
+                </div>
+                <div class="grid-portfolio-items mix web-dev">
+                    <a href="Resources/css/img/g77.jpg" data-caption="Web Development">
+                        <img src="Resources/css/img/g7.jpg" alt="Portfolio">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Portfolio Section-->
+    
+    <!--Start Testimonial Section-->
+    <section id="testimonial" class="scrollify">
+        <div class="row">
+            <div class="grid-testimonial-container">
+                <div class="grid-testimonial-items" uk-scrollspy="cls: uk-animation-slide-left; delay: 400; repeat: true">
+                    <div class="quote">&#10077;</div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos nemo ea porro itaque rem laborum quod qui libero a deleniti. Velit dignissimos ipsa, iusto eveniet totam vero ex vel quis doloremque minima ut aspernatur, voluptatem suscipit aliquid deleniti libero delectus.</p>
+                    <div class="signature">
+                        <img src="Resources/img/signature.png" alt="SG">
+                    </div>
+                    <h4>Deniel Croft</h4>
+                    <span>Creative Designer, Levy</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Testimonial Section-->
+    
+    <!--Start Contact Section-->
+    <section id="contact" class="scrollify">
+        <div class="row">
+            <div class="grid-contact-container">
+                <div class="grid-contact-items">
+                    <h3>Leave a message</h3>
+                    <form action="#" method="post">
+                        <div class="single-form">
+                            <input type="text" placeholder="Name*" required>
+                        </div>
+                        <div class="single-form">
+                            <input type="email" placeholder="Email*" required>
+                        </div>
+                        <div class="single-form">
+                            <input type="text" placeholder="Subject*" required>
+                        </div>
+                        <div class="single-form">
+                            <textarea cols="30" rows="10" placeholder="Message" required></textarea>
+                        </div>
+                        <div class="single-form-btn" uk-scrollspy="cls: uk-animation-shake; repeat: true">
+                            <input type="submit" value="Hire Me" class="btn btn-full">
+                        </div>
+                    </form>
+                </div>
+                <div class="grid-contact-items nested-grid-contact-container">
+                    <div class="nested-grid-contact-items">
+                        <h3>Address</h3>
+                        <p>Gulshan Sales office. SA Tower (Level-5), Plot#1, Road#134, Block SE(A), Gulshan-1, Dhaka 1212.</p>
+                    </div>
+                    <div class="nested-grid-contact-items">
+                        <h3>Phone</h3>
+                        <p>01631443440 <br> 01609699709</p>
+                    </div>
+                    <div class="nested-grid-contact-items">
+                        <h3>Web</h3>
+                        <p>Mail: saikathasann93@gmail.com <br> Website: leadtroppers.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Contact Section-->
+    
+    <!--Start Footer Section-->
+    <footer id="footer" class="scrollify">
+        <div class="row">
+                <div class="social-icons">
+                    <ul>
+                        <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon name="logo-youtube"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                    </ul>
+                </div>
+                <div class="copyright">Copyright: Ali Sayed, All Rights Deserved.</div>
+                <div class="totop">
+                    <a href="#" uk-totop uk-scroll></a>
+                </div>
+        </div>
+    </footer>
+    <!--End Footer Section-->
+    
+    
+    <!--------------------JS Files------------------->
+    
+    <!--jQuery cdn-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!--jQuery cdn-->
+    
+    <!--Ionicons-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!--Ionicons-->
+    
+    <!--UIKIT-->
+    <script src="Vendors/js/uikit.min.js"></script>
+    <script src="Vendors/js/uikit-icons.min.js"></script>
+    <!--UIKIT-->
+    
+    <!--mixitup-->
+    <script src="Vendors/js/mixitup.min.js"></script>
+    <!--mixitup-->
+    
+    <!--Particles-->
+    <script src="Vendors/js/particles.min.js"></script>
+    <script src="Vendors/js/app.js"></script>
+    <!--Particles-->
+    
+    <!--Scrollify-->
+    <script src="Vendors/js/jquery.scrollify.js"></script>
+    <!--Scrollify-->
+    
+    <script src="Resources/js/main.js"></script>
+</body>
+</html>
